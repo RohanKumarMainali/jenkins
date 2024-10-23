@@ -5,6 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Building image , hey'
+                echo 'Testing auto build'
             }
         }
        stage('testing') {
