@@ -1,3 +1,5 @@
+@Library('jenkins-shared-library')_
+
 pipeline {
     agent any
  
@@ -6,6 +8,9 @@ pipeline {
             steps {
                 echo 'Building image , hey'
                 echo 'Testing auto build'
+                script{
+                    build()
+                  }
             }
         }
        stage('testing') {
